@@ -1,0 +1,258 @@
+/*
+Theme Name:virt-manager.org
+Theme URI:http://virt-manager.org/
+Description:This WordPress theme is for http://virt-manager.org/
+Version:1.0.0
+Author:Daniel P. Berrange
+Author URI:http://berrange.com
+Tags:white, fixed-width, two-columns, right-sidebar
+
+*/
+/************************** LAYOUT ************************/
+
+
+@import url(jquery.fancybox/jquery.fancybox.css);
+
+/* Reset default page padding / margins */
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* These 4 areas must all have no border, padding, margin
+ * to ensure that their widths end up *exactly* 100%
+ * otherwise scrollbars appear
+ */
+#main, #panel, #header, #footer {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+/* Header occupies entire top strip */
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+/* Content takes most of the space */
+#main {
+    width: 75%;
+    margin-top: 130px;
+}
+
+/* Right hand panel takes the remainder, over on right */
+#panel {
+    position: absolute;
+    width: 25%;
+    top: 115px;
+    right: 10px;
+}
+
+/* Footer is lined up with content */
+#footer {
+    width: 75%;
+}
+
+
+/******************** GRAPHICS / COLOURS ************************/
+
+body {
+    background-color: #2a333e;
+    color: white;
+}
+
+#header {
+    height: 106px;
+    background: #2a333e url(topbar_pattern.png) repeat-x top left; 
+    color: white;
+}
+
+#header a {
+    display: block;
+    margin: 0px;
+    height: 106px;
+}
+
+#header h1 {
+    margin: 0px;
+    padding-left: 1em;
+}
+
+body {
+    height: 463px;
+}
+
+#header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#footer {
+    color: #888;
+}
+
+#footer a {
+    color: #888;
+}
+
+#content {
+    margin: 2em;
+}
+
+#content a {
+    color: inherit;
+    text-decoration: underline;
+}
+#navigation a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#navigation div.section {
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 1px;
+    background: #97626f;
+    color: #000
+}
+
+#navigation h3 {
+    margin: 5px;
+    padding-left: 40px;
+    height: 32px;
+    line-height: 32px;
+}
+
+#navigation h3 a {
+    text-decoration: none;
+}
+
+#docs {
+    background: url(icon-docs.png) no-repeat center left;
+}
+#comms {
+    background: url(icon-comms.png) no-repeat center left;
+}
+#bugs {
+    background: url(icon-bugs.png) no-repeat center left;
+}
+#scm {
+    background: url(icon-scm.png) no-repeat center left;
+}
+#download {
+    background: url(icon-download.png) no-repeat center left;
+}
+
+#navigation p, #navigation pre {
+    margin: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+ol.styled li, ul.styled li {
+    line-height: 32px;
+    margin-left: 2em;
+}
+
+li.launch {
+    list-style: url(item-launch.png);
+}
+
+li.connect {
+    list-style: url(item-connect.png);
+}
+
+li.shoot {
+    list-style: url(item-shoot.png);
+}
+
+li.handsfree {
+    list-style: url(item-handsfree.png);
+}
+
+li.preview {
+    list-style: url(item-preview.png);
+}
+
+li.download {
+    list-style: url(item-download.png);
+}
+
+li.settings {
+    list-style: url(item-settings.png);
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin-bottom: 2em;
+}
+
+#footer p {
+    margin: 2em;
+    padding: 5px;
+    border-top: 1px solid #888;
+}
+
+table.data {
+    background: #dfb63b;
+    padding: 0px;
+    border-spacing: 1px;
+    border: 1px solid #332a0d;
+}
+
+table.data td, table.data th {
+    padding: 3px;
+}
+
+table.data tbody tr td {
+    background: #eee url(panel-bg.png) repeat top left;
+}
+
+table.data thead th {
+    background: #33436a;
+    color: white;
+}
+
+
+#content pre {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(panel-bg.png) repeat top left;
+    color: black;
+    border: 1px dotted #332a0d;
+    padding: 1em;
+    margin-top: 0px;
+}
+
+p.screenshot {
+    padding: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #999;
+    border: 1px dotted #332a0d;
+    color: black;
+}
+
+p.screenshot span {
+    width: 300px;
+    display: block;
+    border: 1px solid #666;
+    margin-left: auto;
+    margin-right: auto;
+}
+p.screenshots {
+    text-align: center;
+}
+
+p.screenshots span.image {
+    margin: 1em;
+}

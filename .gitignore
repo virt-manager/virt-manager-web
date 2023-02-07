@@ -1,0 +1,9 @@
+*.html
+!_templates/*.html
+*.yml
+!Site.yml
+!.github/workflows/*.yml
+!.gitlab-ci.yml
+*.d
+*~
+\#*#
