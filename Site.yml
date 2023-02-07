@@ -1,0 +1,5 @@
+
+name : "virt-manager"
+tagline : "Virtual Machine Manager"
+
+template : _templates/page.html
