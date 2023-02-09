@@ -2,7 +2,7 @@
 
 ## Current releases
 
-[virt-manager 4.1.0](https://virt-manager.org/download/sources/virt-manager/virt-manager-4.1.0.tar.gz) [(gpg)](https://virt-manager.org/download/sources/virt-manager/virt-manager-4.1.0.tar.gz.asc) Thursday August 04, 2022
+[virt-manager 4.1.0](https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz.asc) Thursday August 04, 2022
 
 * Fix build with setuptools-61 (Peter Alfredsen, Miro Hrončok)
 * add UI and cli support for qemu-vdagent channel (Jonathon Jongsma)
@@ -10,13 +10,13 @@
 * launch_security: Use SEV-ES policy=0x07 if host supports it (Charles Arnold)
 * cli: Add support for URL query with disks (Martin Kletzander)
 
-[virt-viewer 11.0](https://virt-manager.org/download/sources/virt-viewer/virt-viewer-11.0.tar.xz)
-[(gpg)](https://virt-manager.org/download/sources/virt-viewer/virt-viewer-11.0.tar.xz.asc)
+[virt-viewer 11.0](https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz)
+[(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz.asc)
 Friday November 18th, 2021
-[Win x86 MSI](https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x86-11.0-1.0.msi)
-[(gpg)](https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x86-11.0-1.0.msi.asc)
-[Win x64 MSI](https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x64-11.0-1.0.msi)
-[(gpg)](https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x64-11.0-1.0.msi)
+[Win x86 MSI](https://releases.pagure.org/virt-viewer/virt-viewer-x86-11.0-1.0.msi)
+[(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-x86-11.0-1.0.msi.asc)
+[Win x64 MSI](https://releases.pagure.org/virt-viewer/virt-viewer-x64-11.0-1.0.msi)
+[(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-x64-11.0-1.0.msi.asc)
 
 Virt-viewer releases are GPG signed with a key having the fingerprint:
 
@@ -53,7 +53,7 @@ on the mailing list
 * Explicitly disable spice/ovirt features when invoking meson for RPM builds
 * Fix uninitialized variable for keymaps
 
-[virt-bootstrap 1.1.1](http://virt-manager.org/download/sources/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz) [(gpg)](http://virt-manager.org/download/sources/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz.asc) Tuesday Jul 9th, 2019
+[virt-bootstrap 1.1.1](https://releases.pagure.org/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz) [(gpg)](https://releases.pagure.org/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz.sig) Tuesday Jul 9th, 2019
 
 * Don’t expose the root password via command line
 * Set SElinux file context of destination folder
@@ -63,9 +63,9 @@ on the mailing list
 
 ## Previous releases
 
-* virt-manager: [Sources](https://virt-manager.org/download/sources/virt-manager) and [Changelogs](https://github.com/virt-manager/virt-manager/blob/master/NEWS.md)
-* virt-viewer: [Sources](https://virt-manager.org/download/sources/virt-viewer) and [Changelogs](https://gitlab.com/virt-viewer/virt-viewer/-/raw/master/NEWS)
-* virt-bootstrap: [Sources](http://virt-manager.org/download/sources/virt-bootstrap/) and [Changelogs](https://github.com/virt-manager/virt-bootstrap/blob/master/NEWS.md)
+* virt-manager: [Sources](https://releases.pagure.org/virt-manager/) and [Changelogs](https://github.com/virt-manager/virt-manager/blob/master/NEWS.md)
+* virt-viewer: [Sources](https://releases.pagure.org/virt-viewer/) and [Changelogs](https://gitlab.com/virt-viewer/virt-viewer/-/raw/master/NEWS)
+* virt-bootstrap: [Sources](https://releases.pagure.org/virt-bootstrap/) and [Changelogs](https://github.com/virt-manager/virt-bootstrap/blob/master/NEWS.md)
 
 ## Verifying gpg signatures
 
