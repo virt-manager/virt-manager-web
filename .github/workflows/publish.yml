@@ -37,6 +37,7 @@ jobs:
           rm -f README.html
           cp -a *.html _site/
           cp -a static _site/
+          cp -a appdata _site/
           cp -a jquery.fancybox _site/
       - name: Upload artifacts
         # Automatically uploads an artifact from the './_site' directory by default
