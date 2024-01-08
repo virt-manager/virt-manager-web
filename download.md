@@ -2,13 +2,24 @@
 
 ## Current releases
 
+### virt-manager
+
 [virt-manager 4.1.0](https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz.asc) Thursday August 04, 2022
+
+Releases are curently GPG signed by Cole Robinson using
+a key having the fingerprint:
+
+```
+D8F5 BE72 9291 CC5E FE4B 4D09 6455 9E28 C21C C7A8 (4096R)
+```
 
 * Fix build with setuptools-61 (Peter Alfredsen, Miro Hrončok)
 * add UI and cli support for qemu-vdagent channel (Jonathon Jongsma)
 * cli: More –iothreads suboptions (Lin Ma)
 * launch_security: Use SEV-ES policy=0x07 if host supports it (Charles Arnold)
 * cli: Add support for URL query with disks (Martin Kletzander)
+
+### virt-viewer
 
 [virt-viewer 11.0](https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz)
 [(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz.asc)
@@ -18,7 +29,8 @@ Friday November 18th, 2021
 [Win x64 MSI](https://releases.pagure.org/virt-viewer/virt-viewer-x64-11.0-1.0.msi)
 [(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-x64-11.0-1.0.msi.asc)
 
-Virt-viewer releases are GPG signed with a key having the fingerprint:
+Virt-viewer releases are curently GPG signed by Daniel P. Berrange using
+a key having the fingerprint:
 
 ```
 DAF3 A6FD B26B 6291 2D0E 8E3F BE86 EBB4 1510 4FDF (4096R)
@@ -52,6 +64,8 @@ on the mailing list
 * Avoid extra hyphen in build ID strings
 * Explicitly disable spice/ovirt features when invoking meson for RPM builds
 * Fix uninitialized variable for keymaps
+
+### virt-bootstrap
 
 [virt-bootstrap 1.1.1](https://releases.pagure.org/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz) [(gpg)](https://releases.pagure.org/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz.sig) Tuesday Jul 9th, 2019
 
