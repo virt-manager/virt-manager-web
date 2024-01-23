@@ -2,12 +2,11 @@
 
 ## Mailing lists
 
-The project no longer uses mailing lists for discussion. Please open
-issues in [the project](https://github.com/virt-manager/virt-manager)
-with any bug reports, or question.
-
+The project no longer uses mailing lists for discussion.
 [The archives](https://lists.virt-tools.org/) are still available to
 preserve the historical record.
+
+For bug reports and user questions, please see the [Bugs](bugs.html) page.
 
 ## IRC
 
