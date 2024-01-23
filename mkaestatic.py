@@ -199,16 +199,32 @@ def get_markdown_renderer( url_transform ):
         return mistune.Markdown(renderer=MyRenderer(escape=False, use_xhtml=True))
 
     except AttributeError: # Keep this to only support mistune 2
-        class MyRenderer( mistune.HTMLRenderer ):
-            def link(self, link, text, title):
-                link = url_transform(link)
-                return super(MyRenderer, self).link(link, text, title)
+        try:
+            class Dummy( mistune.AstRenderer ):
+                pass
 
-            def image(self, src, alt_text, title):
-                src = url_transform(src)
-                return super(MyRenderer, self).image(src, alt_text, title)
-                
-        return mistune.create_markdown(renderer=MyRenderer(escape=False))
+            class MyRenderer( mistune.HTMLRenderer ):
+                def link(self, link, text, title):
+                    link = url_transform(link)
+                    return super(MyRenderer, self).link(link, text, title)
+
+                def image(self, src, alt_text, title):
+                    src = url_transform(src)
+                    return super(MyRenderer, self).image(src, alt_text, title)
+
+            return mistune.create_markdown(renderer=MyRenderer(escape=False))
+
+        except AttributeError:
+            class MyRenderer( mistune.HTMLRenderer ):
+                def link(self, text, url, title=None):
+                    url = url_transform(url)
+                    return super(MyRenderer, self).link(text, url, title)
+
+                def image(self, alt, url, title=None):
+                    url = url_transform(url)
+                    return super(MyRenderer, self).image(alt, url, title)
+
+            return mistune.create_markdown(renderer=MyRenderer(escape=False))
 
 def render( md_source, template_fn, site_cfg, config, cfg_tree, input_root ):
     ''' This function renders the markdown source to html code. 
