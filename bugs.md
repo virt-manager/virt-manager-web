@@ -6,7 +6,9 @@ The virt-manager project uses github for bug tracking
 
 * [View existing virt-manager/virt-install bugs](https://github.com/virt-manager/virt-manager/issues)
 * [File new virt-manager/virt-install bug](https://github.com/virt-manager/virt-manager/issues/new/choose)
-* virt-manager’s [CONTRIBUTING.md file](https://github.com/virt-manager/virt-manager/blob/master/CONTRIBUTING.md) has tips about bug report
+* virt-manager’s [CONTRIBUTING.md file](https://github.com/virt-manager/virt-manager/blob/master/CONTRIBUTING.md) has tips about filing bug reports.
+
+User or support questions can be asked using [virt-manager github discussions](https://github.com/virt-manager/virt-manager/discussions).
 
 ## Virt-viewer Bugs
 
