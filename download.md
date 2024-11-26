@@ -4,20 +4,49 @@
 
 ### virt-manager
 
-[virt-manager 4.1.0](https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz.asc) Thursday August 04, 2022
+[virt-manager 5.0.0](https://releases.pagure.org/virt-manager/virt-manager-5.0.0.tar.xz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-5.0.0.tar.xz.asc) Tuesday November 26, 2024
 
-Releases are curently GPG signed by Cole Robinson using
+
+Releases are curently GPG signed by Pavel Hrdina using
+a key having the fingerprint:
+
+```
+4252 D86A 5204 1137 C291 CADF C85C 5E95 7062 A701 (4096R)
+```
+
+Releases 4.1.0 and older are GPG signed by Cole Robinson using
 a key having the fingerprint:
 
 ```
 D8F5 BE72 9291 CC5E FE4B 4D09 6455 9E28 C21C C7A8 (4096R)
 ```
 
-* Fix build with setuptools-61 (Peter Alfredsen, Miro Hrončok)
-* add UI and cli support for qemu-vdagent channel (Jonathon Jongsma)
-* cli: More –iothreads suboptions (Lin Ma)
-* launch_security: Use SEV-ES policy=0x07 if host supports it (Charles Arnold)
-* cli: Add support for URL query with disks (Martin Kletzander)
+* virt-clone: colne serial files (Oleg Vasilev)
+* virt-clone: Copy disk permissions as well (Martin Kletzander)
+* virt-install: Add properties for AMD SEV-SNP (Daniel P. Berrangé)
+* virt-install: Add passt backend for user network interface
+* virt-install: Add support for --sound multichannel,stream (Lin Ma)
+* virt-install: Add support for --tpm backend.debug,backend.source (Lin Ma)
+* virt-xml: add --edit --convert-to-q35
+* virt-xml: add --edit --convert-to-vnc
+* virt-xml: Add --edit --boot uefi
+* virt-manager: Fix opening graphical console with egl-headless (Feng Jiang)
+* virt-manager: Add support to create external snapshots
+* virt-manager: Default to scaling=Always for consoles
+* virt-manager: switch to not forking by default
+* cli: Add more --disk options (Lin Ma)
+* cli: Add --memdev target.address_base for virtio-mem and virtio-pmem (Lin Ma)
+* cli: Add --features kvm.pv-ipi.state=on|off (Lin Ma)
+* cli: Add --video model.blob=on|off (Lin Ma)
+* Add missing Hyper-V features and enable most of them by default
+* Add loongarch support (Xianglai Li)
+* Add support for hvf domain type (Mohamed Akram)
+* Support creating sparse volumes on ZFS pools (Iain Buclaw)
+* UEFI improvements for riscv64 and loongarch64 VMs (Andrea Bolognani)
+* Add graphcis to riscv64 and aarch64
+* build: swtich from setuptools to meson
+* diskbackend: Drop support for sheepdog (Lin Ma)
+* cli: Deprecate --cpu host in favor of --cpu host-model (Andrea Bolognani)
 
 ### virt-viewer
 
