@@ -4,7 +4,7 @@
 
 ### virt-manager
 
-[virt-manager 5.0.0](https://releases.pagure.org/virt-manager/virt-manager-5.0.0.tar.xz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-5.0.0.tar.xz.asc) Tuesday November 26, 2024
+[virt-manager 5.1.0](https://releases.pagure.org/virt-manager/virt-manager-5.1.0.tar.xz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-5.1.0.tar.xz.asc) Tuesday August 26, 2025
 
 
 Releases are curently GPG signed by Pavel Hrdina using
@@ -21,32 +21,36 @@ a key having the fingerprint:
 D8F5 BE72 9291 CC5E FE4B 4D09 6455 9E28 C21C C7A8 (4096R)
 ```
 
-* virt-clone: colne serial files (Oleg Vasilev)
-* virt-clone: Copy disk permissions as well (Martin Kletzander)
-* virt-install: Add properties for AMD SEV-SNP (Daniel P. Berrangé)
-* virt-install: Add passt backend for user network interface
-* virt-install: Add support for --sound multichannel,stream (Lin Ma)
-* virt-install: Add support for --tpm backend.debug,backend.source (Lin Ma)
-* virt-xml: add --edit --convert-to-q35
-* virt-xml: add --edit --convert-to-vnc
-* virt-xml: Add --edit --boot uefi
-* virt-manager: Fix opening graphical console with egl-headless (Feng Jiang)
-* virt-manager: Add support to create external snapshots
-* virt-manager: Default to scaling=Always for consoles
-* virt-manager: switch to not forking by default
-* cli: Add more --disk options (Lin Ma)
-* cli: Add --memdev target.address_base for virtio-mem and virtio-pmem (Lin Ma)
-* cli: Add --features kvm.pv-ipi.state=on|off (Lin Ma)
-* cli: Add --video model.blob=on|off (Lin Ma)
-* Add missing Hyper-V features and enable most of them by default
-* Add loongarch support (Xianglai Li)
-* Add support for hvf domain type (Mohamed Akram)
-* Support creating sparse volumes on ZFS pools (Iain Buclaw)
-* UEFI improvements for riscv64 and loongarch64 VMs (Andrea Bolognani)
-* Add graphcis to riscv64 and aarch64
-* build: swtich from setuptools to meson
-* diskbackend: Drop support for sheepdog (Lin Ma)
-* cli: Deprecate --cpu host in favor of --cpu host-model (Andrea Bolognani)
+* cli: Support --cpu maximum (Andrea Bolognani)
+* Prefer maximum mode for many emulated guests (Andrea Bolognani)
+* virt-manager: Fill in model combo with advertised values by libvirt (Lin Ma)
+* virt-manager: Default to same snapshot mode as currently used snapshot
+* virt-manager: Warn users to not mix snapshot modes
+* cli: Add --memdev target.dynamicMemslots support for virtio-mem (Lin Ma)
+* cli: add target.memReserve for pci-bridge and pcie-root-port controllers (Lin Ma)
+* cli: Add --disk driver.queue_size support (Lin Ma)
+* cli: Add 'poll' settings for iothread (Lin Ma)
+* cli: Add --tpm backend.profile.{source,removeDisabled} support (Lin Ma)
+* cli: Add nvram.templateFormat to indicate template format (Lin Ma)
+* cli: Add --features hyperv.xmm_input.state=on/off (Lin Ma)
+* cli: Add --features hyperv.emsr_bitmap.state=on/off (Lin Ma)
+* cli: Add --features hyperv.tlbflush.direct.state=on/off (Lin Ma)
+* cli: Add --features hyperv.tlbflush.extended.state=on/off (Lin Ma)
+* virt-manager: Add riscv64 to prioritized architectures (Heinrich Schuchardt)
+* virtinst: Add --pstore backend=acpi-erst,path=XX,size=YY support (Lin Ma)
+* XML: Fix escaping special characters twice in some cases (Marius Vollmer)
+* Add riscv64 architecture for Debian ISO/URL detection (Heinrich Schuchardt)
+* virt-manager: list virtual networks when creating new QEMU Session VM
+* Add support for vDPA network devices (Joren)
+* virt-install: Detect wayland in order to start virt-viewer
+* Improve Debian/Ubuntu detection for ISO images
+* Allow spaces, disallow slashes in names (AbhinavTiruvee)
+* cli: Add support to fetch cloud-init config files from URL
+* virt-manager: Fix error when opening File Browser (Zahid Kizmaz)
+* virt-manager: Add Ctrl+Alt+Shift+Esc key command for logind's SecureAttentionKey (n3rdopolis)
+* cli: Add support for creating TDX VMs
+* virt-install: Improve default device models to improve Windows ARM support (Akihiko Odaki)
+* Add support to configure startup policy for USB passed through devices (Lin Ma)
 
 ### virt-viewer
 
