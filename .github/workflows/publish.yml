@@ -39,6 +39,7 @@ jobs:
           cp -a static _site/
           cp -a appdata _site/
           cp -a jquery.fancybox _site/
+          cp -a .well-known _site/
       - name: Upload artifacts
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
