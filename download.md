@@ -4,7 +4,9 @@
 
 ### virt-manager
 
-[virt-manager 5.1.0](https://releases.pagure.org/virt-manager/virt-manager-5.1.0.tar.xz) [(gpg)](https://releases.pagure.org/virt-manager/virt-manager-5.1.0.tar.xz.asc) Tuesday August 26, 2025
+[virt-manager 5.1.0](https://github.com/virt-manager/virt-manager/releases/download/v5.1.0/virt-manager-5.1.0.tar.xz)
+[(gpg)](https://github.com/virt-manager/virt-manager/releases/download/v5.1.0/virt-manager-5.1.0.tar.xz.asc)
+Tuesday August 26, 2025
 
 
 Releases are curently GPG signed by Pavel Hrdina using
@@ -54,13 +56,13 @@ D8F5 BE72 9291 CC5E FE4B 4D09 6455 9E28 C21C C7A8 (4096R)
 
 ### virt-viewer
 
-[virt-viewer 11.0](https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz)
-[(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz.asc)
+[virt-viewer 11.0](https://gitlab.com/virt-viewer/virt-viewer/-/releases/v11.0/downloads/virt-viewer-11.0.tar.xz)
+[(gpg)](https://gitlab.com/virt-viewer/virt-viewer/-/releases/v11.0/downloads/virt-viewer-11.0.tar.xz.asc)
 Friday November 18th, 2021
-[Win x86 MSI](https://releases.pagure.org/virt-viewer/virt-viewer-x86-11.0-1.0.msi)
-[(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-x86-11.0-1.0.msi.asc)
-[Win x64 MSI](https://releases.pagure.org/virt-viewer/virt-viewer-x64-11.0-1.0.msi)
-[(gpg)](https://releases.pagure.org/virt-viewer/virt-viewer-x64-11.0-1.0.msi.asc)
+[Win x86 MSI](https://gitlab.com/virt-viewer/virt-viewer/-/releases/v11.0/downloads/virt-viewer-x86-11.0-1.0.msi)
+[(gpg)](https://gitlab.com/virt-viewer/virt-viewer/-/releases/v11.0/downloads/virt-viewer-x86-11.0-1.0.msi.asc)
+[Win x64 MSI](https://gitlab.com/virt-viewer/virt-viewer/-/releases/v11.0/downloads/virt-viewer-x64-11.0-1.0.msi)
+[(gpg)](https://gitlab.com/virt-viewer/virt-viewer/-/releases/v11.0/downloads/virt-viewer-x64-11.0-1.0.msi.asc)
 
 Virt-viewer releases are curently GPG signed by Daniel P. Berrange using
 a key having the fingerprint:
@@ -100,7 +102,9 @@ on the mailing list
 
 ### virt-bootstrap
 
-[virt-bootstrap 1.1.1](https://releases.pagure.org/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz) [(gpg)](https://releases.pagure.org/virt-bootstrap/virt-bootstrap-1.1.1.tar.gz.sig) Tuesday Jul 9th, 2019
+[virt-bootstrap 1.1.1](https://github.com/virt-manager/virt-bootstrap/releases/download/v1.1.1/virt-bootstrap-1.1.1.tar.gz)
+[(gpg)](https://github.com/virt-manager/virt-bootstrap/releases/download/v1.1.1/virt-bootstrap-1.1.1.tar.gz.sig)
+Tuesday Jul 9th, 2019
 
 * Don’t expose the root password via command line
 * Set SElinux file context of destination folder
@@ -110,9 +114,9 @@ on the mailing list
 
 ## Previous releases
 
-* virt-manager: [Sources](https://releases.pagure.org/virt-manager/) and [Changelogs](https://github.com/virt-manager/virt-manager/blob/master/NEWS.md)
-* virt-viewer: [Sources](https://releases.pagure.org/virt-viewer/) and [Changelogs](https://gitlab.com/virt-viewer/virt-viewer/-/raw/master/NEWS)
-* virt-bootstrap: [Sources](https://releases.pagure.org/virt-bootstrap/) and [Changelogs](https://github.com/virt-manager/virt-bootstrap/blob/master/NEWS.md)
+* virt-manager: [Releases](https://github.com/virt-manager/virt-manager/releases) and [Changelogs](https://github.com/virt-manager/virt-manager/blob/master/NEWS.md)
+* virt-viewer: [Releases](https://gitlab.com/virt-viewer/virt-viewer/-/releases) and [Changelogs](https://gitlab.com/virt-viewer/virt-viewer/-/raw/master/NEWS)
+* virt-bootstrap: [Releases](https://github.com/virt-manager/virt-bootstrap/releases) and [Changelogs](https://github.com/virt-manager/virt-bootstrap/blob/master/NEWS.md)
 
 ## Verifying gpg signatures
 
